@@ -15,7 +15,7 @@
 .default {
   background-color: $col-default;
   &:hover { 
-    $col-default-light;
+    background-color: $col-default-light;
   }
 }
 
