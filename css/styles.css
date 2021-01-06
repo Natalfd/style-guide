@@ -457,7 +457,8 @@ a {
   padding: 10px 0;
   display: block;
   width: 100%;
-  transition: background-color .2s ease-in-out,  color .2s ease-in-out; }
+  transition: background-color .2s ease-in-out, 
+ color .2s ease-in-out; }
 
 /* line 23, ../../Downloads/Treehouse/style-guide/scss/components/_navigation.scss */
 .nav-link:hover {
