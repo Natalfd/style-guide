@@ -14,7 +14,7 @@
 
 .default {
   background-color: $col-default;
-  &hover: $col-default-light;
+  &:hover: $col-default-light;
 }
 
 .error {
