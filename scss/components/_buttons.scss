@@ -13,21 +13,21 @@
 }
 
 .default {
-  background-color: #51ddfc;
+  background-color: $col-default;
 }
 
 .error {
-  background-color: #e4757a;
+  background-color: $col-error;
 }
 
 .info {
-  background-color: #927bc1;
+  background-color: $col-info;
 }
 
 .success {
-  background-color: #63cc82;
+  background-color: $col-success;
 }
 
 .warning {
-  background-color: #fd7856;
+  background-color: $col-warning;
 }
