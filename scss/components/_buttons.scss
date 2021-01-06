@@ -10,6 +10,7 @@
   padding: 10px 0;
   text-transform: uppercase;
   border-radius: 5px;
+  transition: 0.3s;
 }
 
 .default {
@@ -21,16 +22,29 @@
 
 .error {
   background-color: $col-error;
+  &:hover { 
+    background-color: $col-error-light;
+  }
 }
 
 .info {
   background-color: $col-info;
+  &:hover { 
+    background-color: $col-info-light;
+  }
+  
 }
 
 .success {
   background-color: $col-success;
+  &:hover { 
+    background-color: $col-success-light;
+  }
 }
 
 .warning {
   background-color: $col-warning;
+  &:hover { 
+    background-color: $col-warning-light;
+  }
 }

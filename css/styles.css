@@ -1,6 +1,12 @@
 /* ============================================= */
 /* Color Variables*/
 /* ============================================= */
+/* ============================================= */
+/* Media Query Variables*/
+/* ============================================= */
+/* ============================================= */
+/* Font Variables*/
+/* ============================================= */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -345,7 +351,7 @@ template {
 /* ============================================= */
 /* line 5, ../../Downloads/Treehouse/style-guide/scss/base/_typography.scss */
 * {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #777;
   box-sizing: border-box; }
 
@@ -396,30 +402,43 @@ a {
   border: none;
   padding: 10px 0;
   text-transform: uppercase;
-  border-radius: 5px; }
+  border-radius: 5px;
+  transition: 0.3s; }
 
-/* line 15, ../../Downloads/Treehouse/style-guide/scss/components/_buttons.scss */
+/* line 16, ../../Downloads/Treehouse/style-guide/scss/components/_buttons.scss */
 .default {
   background-color: #51ddfc; }
-  /* line 17, ../../Downloads/Treehouse/style-guide/scss/components/_buttons.scss */
+  /* line 18, ../../Downloads/Treehouse/style-guide/scss/components/_buttons.scss */
   .default:hover {
     background-color: #9cecfd; }
 
-/* line 22, ../../Downloads/Treehouse/style-guide/scss/components/_buttons.scss */
+/* line 23, ../../Downloads/Treehouse/style-guide/scss/components/_buttons.scss */
 .error {
   background-color: #e4757a; }
-
-/* line 26, ../../Downloads/Treehouse/style-guide/scss/components/_buttons.scss */
-.info {
-  background-color: #927bc1; }
+  /* line 25, ../../Downloads/Treehouse/style-guide/scss/components/_buttons.scss */
+  .error:hover {
+    background-color: #f1b5b8; }
 
 /* line 30, ../../Downloads/Treehouse/style-guide/scss/components/_buttons.scss */
+.info {
+  background-color: #927bc1; }
+  /* line 32, ../../Downloads/Treehouse/style-guide/scss/components/_buttons.scss */
+  .info:hover {
+    background-color: #bdafd9; }
+
+/* line 38, ../../Downloads/Treehouse/style-guide/scss/components/_buttons.scss */
 .success {
   background-color: #63cc82; }
+  /* line 40, ../../Downloads/Treehouse/style-guide/scss/components/_buttons.scss */
+  .success:hover {
+    background-color: #9ddfb0; }
 
-/* line 34, ../../Downloads/Treehouse/style-guide/scss/components/_buttons.scss */
+/* line 45, ../../Downloads/Treehouse/style-guide/scss/components/_buttons.scss */
 .warning {
   background-color: #fd7856; }
+  /* line 47, ../../Downloads/Treehouse/style-guide/scss/components/_buttons.scss */
+  .warning:hover {
+    background-color: #feb4a2; }
 
 /* ============================================= */
 /*              Forms                            */
@@ -464,11 +483,10 @@ a {
   display: block;
   width: 100%;
   transition: background-color .2s ease-in-out,  color .2s ease-in-out; }
-
-/* line 23, ../../Downloads/Treehouse/style-guide/scss/components/_navigation.scss */
-.nav-link:hover {
-  color: #fff;
-  background-color: #58e1c1; }
+  /* line 21, ../../Downloads/Treehouse/style-guide/scss/components/_navigation.scss */
+  .nav-link:hover {
+    color: #fff;
+    background-color: #58e1c1; }
 
 /* ============================================= */
 /*              Images                           */
@@ -482,7 +500,7 @@ a {
   max-width: 100%;
   max-height: 100%; }
 
-/* line 15, ../../Downloads/Treehouse/style-guide/scss/components/_images.scss */
+/* line 13, ../../Downloads/Treehouse/style-guide/scss/components/_images.scss */
 .img-frame {
   display: block;
   margin-left: auto;
@@ -492,7 +510,7 @@ a {
   padding: 13px;
   border: 1px solid #ccc; }
 
-/* line 25, ../../Downloads/Treehouse/style-guide/scss/components/_images.scss */
+/* line 21, ../../Downloads/Treehouse/style-guide/scss/components/_images.scss */
 .img-logo {
   display: block;
   margin-left: auto;
@@ -586,69 +604,69 @@ a {
     display: block;
     margin-left: auto;
     margin-right: auto; }
-  /* line 20, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
+  /* line 18, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
   .row {
     flex-direction: row; }
-  /* line 24, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
+  /* line 22, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
   [class^=col] {
     display: flex;
     justify-content: center;
     margin-top: 0;
     align-items: center; }
-  /* line 31, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
+  /* line 29, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
   [class^=col] + [class^=col] {
     margin-left: 10px; }
-  /* line 35, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
+  /* line 33, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
   .col-1 {
     flex-basis: 8.33%; }
-  /* line 39, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
+  /* line 37, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
   .col-2 {
     flex-basis: 16.67%; }
-  /* line 43, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
+  /* line 41, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
   .col-3 {
     flex-basis: 25.00%; }
-  /* line 47, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
+  /* line 45, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
   .col-4 {
     flex-basis: 33.33%; }
-  /* line 51, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
+  /* line 49, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
   .col-5 {
     flex-basis: 41.67%; }
-  /* line 55, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
+  /* line 53, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
   .col-6 {
     flex-basis: 50.00%; }
-  /* line 59, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
+  /* line 57, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
   .col-7 {
     flex-basis: 58.33%; }
-  /* line 63, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
+  /* line 61, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
   .col-8 {
     flex-basis: 66.67%; }
-  /* line 67, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
+  /* line 65, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
   .col-9 {
     flex-basis: 75.00%; }
-  /* line 71, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
+  /* line 69, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
   .col-10 {
     flex-basis: 83.33%; }
-  /* line 75, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
+  /* line 73, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
   .col-11 {
     flex-basis: 91.67%; }
-  /* line 79, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
+  /* line 77, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
   .col-12 {
     flex-basis: 100%; }
-  /* line 83, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
+  /* line 81, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
   .nav {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center; }
-  /* line 89, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
+  /* line 87, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
   .nav-link {
     flex-basis: 100px; }
-  /* line 93, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
+  /* line 91, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
   .btn {
     padding: 10px 30px; }
-  /* line 97, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
+  /* line 95, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
   .btn + .btn {
     margin-left: 10px; }
-  /* line 101, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
+  /* line 99, ../../Downloads/Treehouse/style-guide/scss/components/_media-queries.scss */
   .logo {
     margin-left: initial;
     margin-right: initial; } }

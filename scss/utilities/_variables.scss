@@ -4,13 +4,31 @@
 
 $col-font-primary: #777;
 $col-font-secondary: #58e1c1;
+
 $col-default: #51ddfc;
 $col-default-light: lighten($col-default, 15%);
+
 $col-success: #63cc82;
+$col-success-light: lighten($col-success, 15%);
+
 $col-error: #e4757a;
+$col-error-light: lighten($col-error, 15%);
+
 $col-warning: #fd7856;
+$col-warning-light: lighten($col-warning, 15%);
+
 $col-info: #927bc1;
+$col-info-light: lighten($col-info, 15%);
 
 
-
+/* ============================================= */
+/* Media Query Variables*/
+/* ============================================= */
 $break-med: 768px;
+
+
+
+/* ============================================= */
+/* Font Variables*/
+/* ============================================= */
+$font-main: 'Lato', sans-serif;
